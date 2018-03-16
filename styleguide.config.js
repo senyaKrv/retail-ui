@@ -10,7 +10,16 @@ function getComponentList() {
 }
 
 module.exports = {
-  components: getComponentList,
+  sections: [
+    {
+      name: 'Examples',
+      sections: [{ content: 'docs/examples/login-form.md' }]
+    },
+    {
+      name: 'Components',
+      components: getComponentList
+    }
+  ],
   skipComponentsWithoutExample: true,
   styles: {
     StyleGuide: {
